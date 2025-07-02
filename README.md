@@ -23,11 +23,12 @@ A built-in Settings page lets you configure your OpenCart DB connection without 
 
 ## Installation
 
-1. Unzip the plugin folder into your `/wp-content/plugins/oc2wp-sync/` directory.
-2. Place your `oc2wp.png` logo into `/wp-content/plugins/oc2wp-sync/images/oc2wp.png`.
-3. Go to **Plugins** in your WordPress admin and activate **OC2WP Sync**.
-4. Navigate to **OC2WP Sync → Settings** and enter your OpenCart database credentials (host, name, user, password), then click **Save Changes**.
-5. Head over to **OC2WP Sync**, click **Start Sync**, and watch the live log as your products flow into WooCommerce.
+1. Head over to plugins on wordpress pick the zipped file and click install.
+2. Activate OC2WP Sync in your WordPress Plugins screen.
+3. Open the OC2WP Sync Settings page in your admin menu.
+4. Enter your OpenCart database host name database name username and password then save the settings.
+5. Go to the main Sync page choose the starting product number and click Start Sync.
+6. Watch the live log as each product description and variation appears in WooCommerce.
 
 ## Frequently Asked Questions
 
@@ -37,19 +38,6 @@ A: Any 2.x or 3.x OpenCart installation, as long as it uses the standard oc\_pro
 **Q: Can I run this on a staging environment?**
 A: Yes. Simply point the plugin’s Settings to your staging OpenCart DB.
 
-**Q: How do I adjust the variation batch size?**
-A: By default it processes 20 variations at a time. You can filter it via:
-
-```php
-add_filter('oc2wp_variation_chunk_size', fn($size) => 50);
-```
-
-Place that in your theme’s `functions.php` or a custom plugin.
-
-## Screenshots
-
-1. **Settings Page** – Enter your DB credentials safely.
-2. **Sync UI** – Start, pause, and view real-time import logs.
 
 ## Changelog
 
