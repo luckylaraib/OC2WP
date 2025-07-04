@@ -19,8 +19,6 @@ OC2WP Sync connects directly to your OpenCart database and:
 5. Generates every combination of option values as individual WooCommerce variations
 6. Splits the import into configurable chunks to avoid timeouts
 
-A built-in Settings page lets you configure your OpenCart DB connection without touching any code. A single-page Sync UI shows real-time logs as products and variations are imported.
-
 ## Installation
 
 1. Head over to plugins on wordpress pick the zipped file and click install.
@@ -43,7 +41,7 @@ A: Yes. Simply point the plugin’s Settings to your staging OpenCart DB.
 
 ### 1.9 (2025-07-02)
 
-* Fully self-contained DB connect only on demand (no PHP warnings on fresh install)
+* Fully self-contained DB connect only on demand 
 * Admin notice if credentials are missing
 * AJAX error fallback for missing or invalid credentials
 
